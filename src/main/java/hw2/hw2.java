@@ -16,8 +16,9 @@ public class hw2 {
     private static void printTest() {
         StringBuilder str1 = new StringBuilder();
         str1.append("TEST ".repeat(100));
+        System.out.println(str1);
         try {
-            FileWriter file1 = new FileWriter("/scr/main/java/hw2/Test.txt");
+            FileWriter file1 = new FileWriter("Test.txt");
             file1.write(String.valueOf(str1));
             file1.flush();
         } catch (Exception e){
